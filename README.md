@@ -120,17 +120,17 @@ streamlit run app.py
 
 ## 📊 Example
 
-# Input:
+### Input:
 
 Source: Anekal  
 Destination: MG Road
 
-# Output:
+### Output:
 
-# Shortest Path:
+### Shortest Path:
 Anekal → Electronic City → Silk Board → BTM → Jayanagar → MG Road
 
-# Total Distance: XX km
+### Total Distance: XX km
 🌍 Google Maps Integration
 
 The system dynamically generates a navigation link:
