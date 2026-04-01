@@ -88,32 +88,49 @@ python main.py
 streamlit run app.py
 ```
 
-# 📸 Screenshots
 ## 🖥️ Console Output (VS Code)
-    screenshots/console.jpeg
+
+![Console Output](screenshots/console.jpeg)
+
+---
+
 ## 📏 Shortest Route and Distance Output
-    screenshots/console1.jpeg
+
+![Route Output](screenshots/console1.jpeg)
+
+---
+
 ## 🌐 Streamlit Web Interface
-    screenshots/streamlit.jpeg
-    screenshots/Streamlit1.jpeg
+
+![Streamlit UI 1](screenshots/streamlit.jpeg)
+
+![Streamlit UI 2](screenshots/Streamlit1.jpeg)
+
+---
+
 ## 🗺️ Graph Visualization
-    screenshots/graph.jpeg
-## Google map link direction
-    screenshots/map.jpeg
+
+![Graph](screenshots/graph.jpeg)
+
+---
+
+## 🌍 Google Maps Direction Link
+
+![Google Maps](screenshots/map.jpeg)
 
 ## 📊 Example
 
-Input:
+# Input:
 
 Source: Anekal  
 Destination: MG Road
 
-Output:
+# Output:
 
-Shortest Path:
+# Shortest Path:
 Anekal → Electronic City → Silk Board → BTM → Jayanagar → MG Road
 
-Total Distance: XX km
+# Total Distance: XX km
 🌍 Google Maps Integration
 
 The system dynamically generates a navigation link:
