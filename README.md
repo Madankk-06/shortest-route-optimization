@@ -38,6 +38,7 @@ The project includes both a **console-based system** and a **modern web interfac
 ---
 
 ## 🏗️ Project Structure
+```
 shortest_route_project/
 │
 ├── main.py # Console-based interface
@@ -62,8 +63,7 @@ shortest_route_project/
 │
 ├── requirements.txt # Dependencies
 └── .gitignore # Ignore unnecessary files
-
-
+```
 ---
 
 ## ⚙️ How It Works
@@ -96,7 +96,7 @@ streamlit run app.py
 
 ## 📏 Shortest Route and Distance Output
 
-![Route Output](screenshots/console1.jpeg)
+![Route Output](screenshots/cosole1.jpeg)
 
 ---
 
