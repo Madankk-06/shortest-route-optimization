@@ -8,7 +8,6 @@ st.set_page_config(page_title="Route Optimization", layout="centered")
 st.title("🚗 Shortest Route Optimization System")
 st.markdown("Find shortest path like Rapido / Google Maps")
 
-# Dropdowns
 locations = list(graph.keys())
 
 source = st.selectbox("Select Source Location", locations)

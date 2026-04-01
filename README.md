@@ -1,242 +1,160 @@
 # 🚗 Shortest Route Optimization System
-### (Ride-Sharing Route Finder using Dijkstra’s Algorithm)
+### 📍 Dijkstra’s Algorithm | 🌐 Streamlit Web App | 🗺️ Google Maps Integration
 
 ---
 
 ## 📌 Project Overview
-This project simulates a route optimization system similar to ride-sharing applications like Rapido, Uber, and Google Maps. It computes the shortest path between two locations using **Dijkstra’s Algorithm** on a weighted graph.
 
-The system models real-world locations (Bangalore-based) as nodes and roads as edges with distances.
+This project implements a **Shortest Route Optimization System** similar to real-world ride-sharing and navigation platforms like Rapido, Uber, and Google Maps.
 
----
+The system uses **Dijkstra’s Algorithm** to compute the shortest path between locations represented as a weighted graph. It provides an efficient way to determine optimal routes, minimizing travel distance and improving decision-making.
 
-## 🎯 Objectives
-- Model a road network using graph data structure
-- Implement Dijkstra’s shortest path algorithm
-- Compute shortest route between source and destination
-- Display path, distance, and traversal steps
-- Provide Google Maps navigation link
-- Visualize graph structure
+The project includes both a **console-based system** and a **modern web interface using Streamlit**, along with **graph visualization** and **Google Maps integration** for real-world relevance.
 
 ---
 
-## 🧠 Data Structures Used
-- **Graph (Adjacency List)** → Efficient storage of nodes and edges
-- **Priority Queue (Min Heap)** → Used in Dijkstra for optimization
-- **Dictionary** → To store distances and previous nodes
+## 🚀 Key Features
+
+✔ Shortest path computation using Dijkstra’s Algorithm  
+✔ Step-by-step route traversal  
+✔ Total distance calculation  
+✔ Distance from source to all locations  
+✔ Interactive **Streamlit Web Interface**  
+✔ Graph visualization using NetworkX  
+✔ Google Maps route link generation  
+✔ Robust error handling and validation  
+✔ Modular and scalable project design  
 
 ---
 
-## ⚙️ Algorithm Used
-### Dijkstra’s Algorithm
+## 🧠 Technologies Used
 
-Steps:
-1. Initialize all distances as infinity
-2. Set source node distance to 0
-3. Use a priority queue to pick minimum distance node
-4. Update distances of neighboring nodes
-5. Track previous nodes for path reconstruction
-6. Repeat until shortest path is found
+- Python 3  
+- Streamlit  
+- NetworkX  
+- Matplotlib  
+- Heapq (Priority Queue)  
 
 ---
 
-## ⏱️ Complexity Analysis
-- **Time Complexity:** O((V + E) log V)
-- **Space Complexity:** O(V)
-
-Where:
-- V = Number of vertices (locations)
-- E = Number of edges (roads)
-
----
-
-## 🚀 Features
-- ✅ Find shortest path between locations
-- ✅ Display full route (step-by-step)
-- ✅ Show total distance
-- ✅ Show distance from source to all locations
-- ✅ Handle invalid inputs
-- ✅ Google Maps route link generation
-- ✅ Graph visualization using NetworkX
-
----
-
-## 🗺️ Example
-
-**Input:**
-
-
-**Output:**
+## 🏗️ Project Structure
+shortest_route_project/
+│
+├── main.py # Console-based interface
+├── app.py # Streamlit frontend
+│
+├── graph_data.py # Graph data (road network)
+├── dijkstra_algo.py # Dijkstra algorithm implementation
+├── utils.py # Helper functions
+│
+├── test_cases.py # Testing module
+├── visualize_graph.py # Graph visualization
+│
+├── screenshots/ # Project screenshots
+│ ├── console.jpeg
+│ ├── console1.jpeg
+│ ├── graph.jpeg
+│ ├── streamlit.jpeg
+│ └── streamlit1.jpeg
+│
+├── README.md # Documentation
+├── report_notes.txt # Report content
+│
+├── requirements.txt # Dependencies
+└── .gitignore # Ignore unnecessary files
 
 
 ---
 
-## 🌍 Google Maps Integration
-The project generates a direct navigation link:
+## ⚙️ How It Works
 
-
-
-This allows users to view the computed route in real-world maps.
-
----
-
-## 📊 Graph Visualization
-The system uses:
-- `networkx`
-- `matplotlib`
-
-To visually display the road network graph.
+1. User selects source and destination  
+2. The system models locations as a weighted graph  
+3. Dijkstra’s Algorithm computes the shortest path  
+4. The shortest route and distance are displayed  
+5. A Google Maps link is generated for real-world navigation  
 
 ---
 
-## ⚠️ Limitations
-- Does not support negative edge weights
-- Uses static graph (no real-time traffic)
-- Does not use live GPS data
+## ▶️ Run the Project
 
----
-
-## 🔮 Future Enhancements
-- GUI interface using Tkinter or Web App
-- Real-time traffic integration
-- A* Algorithm implementation
-- Dynamic graph updates
-- Integration with real map APIs
-
----
-
-## 🛠️ Technologies Used
-- Python 3
-- heapq (Priority Queue)
-- NetworkX
-- Matplotlib
-
----
-
-## ▶️ How to Run
+### 🖥️ Run Console Version
 
 ```bash
-python main.py
+python main.py 
+```
+## 🌐 Run Streamlit Web App
+```bash
+streamlit run app.py
+```
 
+# 📸 Screenshots
+## 🖥️ Console Output (VS Code)
+    screenshots/console.jpeg
+## 📏 Shortest Route and Distance Output
+    screenshots/console1.jpeg
+## 🌐 Streamlit Web Interface
+    screenshots/streamlit.jpeg
+    screenshots/Streamlit1.jpeg
+## 🗺️ Graph Visualization
+    screenshots/graph.jpeg
+## Google map link direction
+    screenshots/map.jpeg
 
----
+## 📊 Example
 
-# 📄 ✅ REPORT NOTES (FINAL VERSION)
-
-Paste into `report_notes.txt`:
-
-```text
-PROJECT TITLE:
-Shortest Route Optimization for Ride-Sharing Applications Using Dijkstra’s Algorithm
-
-------------------------------------------------------------
-
-1. INTRODUCTION
-Route optimization plays a crucial role in modern ride-sharing and navigation systems such as Rapido, Uber, and Google Maps. These systems must efficiently determine the shortest path between two locations to minimize travel time and distance.
-
-This project demonstrates how graph-based algorithms can be used to solve such problems effectively.
-
-------------------------------------------------------------
-
-2. PROBLEM STATEMENT
-Given a road network represented as a weighted graph:
-- Nodes represent locations
-- Edges represent roads
-- Weights represent distance
-
-The goal is to find the shortest path between a source and a destination.
-
-------------------------------------------------------------
-
-3. OBJECTIVES
-- To model a road network using graph data structure
-- To implement Dijkstra’s Algorithm
-- To compute shortest route between locations
-- To display path and total distance
-- To analyze algorithm efficiency
-
-------------------------------------------------------------
-
-4. DATA STRUCTURES USED
-- Graph (Adjacency List Representation)
-- Priority Queue (Min Heap)
-- Dictionaries for storing distances and paths
-
-------------------------------------------------------------
-
-5. ALGORITHM USED
-Dijkstra’s Algorithm
-
-Working:
-1. Assign infinite distance to all nodes
-2. Set source distance to 0
-3. Select node with minimum distance
-4. Update distances of adjacent nodes
-5. Repeat until all nodes are processed
-
-------------------------------------------------------------
-
-6. SYSTEM DESIGN
 Input:
-- Source location
-- Destination location
 
-Process:
-- Apply Dijkstra’s algorithm
-- Compute shortest path
+Source: Anekal  
+Destination: MG Road
 
 Output:
-- Shortest path
-- Total distance
-- Step-by-step traversal
 
-------------------------------------------------------------
+Shortest Path:
+Anekal → Electronic City → Silk Board → BTM → Jayanagar → MG Road
 
-7. IMPLEMENTATION
-The project is implemented using Python.
+Total Distance: XX km
+🌍 Google Maps Integration
 
-Modules:
-- graph_data.py → Graph representation
-- dijkstra_algo.py → Algorithm implementation
-- utils.py → Path reconstruction & map link
-- main.py → User interface
-- test_cases.py → Testing module
+The system dynamically generates a navigation link:
 
-------------------------------------------------------------
+https://www.google.com/maps/dir/Source/Destination
 
-8. RESULTS
-The system successfully computes:
-- Shortest path between locations
-- Distance from source to destination
-- Distance to all nodes
+This allows users to directly view the computed route in Google Maps.
 
-------------------------------------------------------------
+## ⏱️ Complexity Analysis
+Time Complexity: O((V + E) log V)
+Space Complexity: O(V)
 
-9. COMPLEXITY ANALYSIS
-Time Complexity:
-O((V + E) log V)
+Where:
 
-Space Complexity:
-O(V)
+V = Number of vertices
+E = Number of edges
+## ⚠️ Limitations
+Does not support negative edge weights
+Uses a static dataset (no real-time updates)
+Does not consider traffic conditions
+## 🔮 Future Enhancements
+Integration with real-time traffic data
+Implementation of A* Algorithm
+Mobile application development
+Dynamic graph updates
+AI-based route optimization
+## 📦 Installation
 
-------------------------------------------------------------
+Install dependencies using:
 
-10. LIMITATIONS
-- Does not handle negative weights
-- No real-time traffic updates
-- Static dataset
+pip install -r requirements.txt
+🧪 Testing
 
-------------------------------------------------------------
+## Run test cases:
 
-11. FUTURE SCOPE
-- GUI-based application
-- Integration with real-time navigation APIs
-- Implementation of A* algorithm
-- Large-scale map datasets
+python test_cases.py
 
-------------------------------------------------------------
+## 👨‍💻 Author
+Madan KK
 
-12. CONCLUSION
-The project successfully demonstrates the use of Dijkstra’s Algorithm for shortest path computation. It highlights the importance of graph data structures in solving real-world problems like route optimization.
+⭐ Support
+If you like this project, consider giving it a ⭐ on GitHub!
 
-------------------------------------------------------------
+
